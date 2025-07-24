@@ -3,3 +3,82 @@
     padding: 0;
     box-sizing: border-box;
 }
+
+
+/* shared css */
+body{
+    background-color: #F5F8FF;
+}
+
+.container{
+    max-width: 1140px;
+    margin: 0 auto;
+}
+
+
+
+
+/* nav section css */
+
+nav{
+    justify-content: space-between;
+    align-items: center;
+    display: flex;
+    padding-top: 30px;
+    
+}
+.main-menu ul{
+  display: flex;
+  justify-content: flex-end;
+  width: 900px;
+
+}
+
+.main-menu ul li{
+    list-style: none;    
+}
+.main-menu ul li a{
+    text-decoration: none;
+    margin-right: 20px;
+    color: #8987A1;
+    
+}
+.shoping-cart-area ul{
+    display: flex;
+    
+}
+.shoping-cart-area ul li{
+    list-style: none;
+}
+.shoping-cart-area ul li a{
+    text-decoration: none;
+}
+
+.cart-shop{
+    margin-left: 10px;
+}
+
+
+/* hero section css */
+.hero-section{
+    display: flex;
+    align-items: center;
+    padding: 120px 0px;
+}
+.hero-content {
+    max-width: 570px;
+}
+.hero-content h3 {
+    font-size: 4rem;
+    margin-bottom: 12px;
+    font-weight: bold;
+}
+
+.hero-content span {
+    color: #E95A08;
+}
+.hero-content p{
+    color: rgba(0, 0, 0, 0.5);
+}
+
+/* our plants section css */
