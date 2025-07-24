@@ -333,6 +333,9 @@ nav{
     width: 1440px;
     background-image: url('../images/news-letter-bg.png');
     text-align: center;
+    /* background-repeat: no-repeat; */
+    background-position: center center;
+    background-size: cover;
     margin: 0 auto;
     
 }
@@ -364,12 +367,12 @@ nav{
 }
 
 
+
 /* footer section css */
 .footer-content{
     display: flex;
     padding: 50px 0px;
     justify-content: space-around;
-    
 }
 .footer-brand{
     width: 360px;
@@ -379,7 +382,7 @@ nav{
 }
 .footer-brand img{
     margin-bottom: 16px;
-    /* text-align: center; */
+
 }
 .footer-brand p{
     color: #8987A1;
@@ -408,6 +411,10 @@ nav{
 }
 
 
+
+
+/* responsive css */
+
 @media screen and (max-width: 576px) {
   
     .flower-lover-items,
@@ -424,12 +431,15 @@ nav{
    }
    .hero-section{
     flex-direction: column-reverse;
+    
 
    }
    .hero-content{
     padding-top: 28px;
     padding-left: 16px;
     padding-right: 16px;
+    
+
    }
    .hero-image img{
     width: 100%;
@@ -438,6 +448,7 @@ nav{
     font-size: 1.7rem;
 
    }
+   
 
    .our-plants-card{
     display: grid;
@@ -448,13 +459,14 @@ nav{
    }
    .our-plants-section{
     margin-bottom: 50px;
+    
    }
     .our-plants-card img{
          width: 100%;
     }
     .our-plants-title{
         text-align: center;
-        padding: 10px;
+        padding: 20px;
     }
     .card-item button{
         padding: 10px 60px;
@@ -471,27 +483,41 @@ nav{
         width: 100%;
     }
     .right-deal-content h3{
-        font-size: 1.4rem;
+        font-size: 1.2rem;
     }
     .right-deal img{
         width: 100%;
         padding: 0 30px;
+        margin-top: -25px;
+        /* border-radius: 20px; */
        
         
     }
     .right-deal::before {
     position: absolute;
-    bottom: 20px;
-    left: 25px;
-    height: 89%;
+    bottom: 23px;
+    left: 28px;
+    height: 100%;
     width: 87%;
     content: "";
     background: #000;
     opacity: 30%;
-    border-radius: 30px;
+    /* border-radius: 30px; */
+}   .latest-deals{
+    margin-bottom: 50px;
+
+}
+.latast-deals-content{
+    padding: 20px;
+    text-align: center;
+}
+.latest-deals p{
+    margin-bottom: 30px;
 }
     .subscribe-us{
         width: 100%;
+        
+
     }
     .subscribe-us h3{
         font-size: 1.4rem;
