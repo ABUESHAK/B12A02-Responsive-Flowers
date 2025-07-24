@@ -449,16 +449,16 @@ nav{
 
    }
    
-
    .our-plants-card{
     display: grid;
     grid-template-columns: repeat(2, 1fr);
-    gap: 10px;
-    margin-bottom: 10px;
+    gap: 20px;
+    margin-bottom: 48px;
    
    }
    .our-plants-section{
     margin-bottom: 50px;
+  
     
    }
     .our-plants-card img{
