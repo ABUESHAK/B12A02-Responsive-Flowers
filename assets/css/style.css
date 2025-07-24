@@ -20,15 +20,17 @@ body{
     margin: 0 auto;
 }
 
+/* img{width: 100%;
 
+} */
 
 
 /* nav section css */
 
 nav{
+    display: flex;
     justify-content: space-between;
     align-items: center;
-    display: flex;
     padding-top: 30px;
     
 }
@@ -120,8 +122,11 @@ nav{
 .card-item h5{
     font-size: 1.4rem;
     color: #111111;
-    font-weight: medium;
+    font-weight: 500;
     margin-bottom: 20px;
+}
+.card-item p{
+    font-weight: 800;
 }
 
 .card-item button{
@@ -135,6 +140,16 @@ nav{
 }
 
 /* flower-lover-section css */
+.flower-lover-section{
+    position: relative;
+}
+.flower-lover-image-icon {
+    width: 286px;
+    height: 286px;
+    position: absolute;
+    left: 360px;
+    top: -108px;
+}
 .flower-lover-items{
     display: flex;
     gap: 60px;
@@ -158,13 +173,7 @@ nav{
     
 
 }
-.flower-lover-image-icon {
-    width: 286px;
-    height: 286px;
-    position: absolute;
-    top: 282%;
-    left: 550px;
-}
+
 
 
 /* latest-deals-layout css */
@@ -207,6 +216,17 @@ nav{
 .left-deal-card{
     position: relative;
 }
+.left-deal-card::before {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    content: "";
+    background: #000000;
+    opacity: 30%;
+    border-radius: 14px;
+}
 .left-deal-card-content{
     position: absolute;
     top: 50%;
@@ -231,6 +251,17 @@ nav{
     position: relative;
     margin: 20px 0px;
 }
+.left-deal-item::before {
+    position: absolute;
+    top: 0;
+    left: 0;
+    content: "";
+    height: 100%;
+    width: 100%;
+    background: #000;
+    opacity: 30%;
+    border-radius: 14px;
+}
 
 .left-deal-content{
     position: absolute;
@@ -253,7 +284,21 @@ nav{
     position: relative;
     padding-bottom: 20px;
 }
+.right-deal::before {
+    position: absolute;
+    bottom: 23px;
+    left: 0;
+    height: 95%;
+    width: 100%;
+    content: "";
+    background: #000;
+    opacity: 30%;
+    border-radius: 30px;
+}
 
+.right-deal-img img {
+    border-radius: 30px;
+}
 .right-deal-content{
     position: absolute;
     top: 50%;
@@ -269,9 +314,7 @@ nav{
     color: white;
     font-size: 1.7rem;
 }
-.right-deal-img img{
-    border-radius: 14px;
-}
+
 
 
 /* subscribe-us css */
@@ -355,5 +398,101 @@ nav{
 
 
 @media screen and (max-width: 576px) {
+  
+    .flower-lover-items,
+    .latest-deals-layout,
+    .footer-content{
+        flex-direction: column;
+    }
+    nav{
+    align-items: center;
+    padding: 20px;
+   } 
+   .main-menu ul{
+    display: none;
+   }
+   .hero-section{
+    flex-direction: column-reverse;
+
+   }
+   .hero-content{
+    padding-top: 28px;
+    padding-left: 16px;
+    padding-right: 16px;
+   }
+   .hero-image img{
+    width: 100%;
+   }
+   .hero-content h3{
+    font-size: 1.7rem;
+
+   }
+
+   .our-plants-card{
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    gap: 10px;
+    margin-bottom: 10px;
+   
+   }
+   .our-plants-section{
+    margin-bottom: 50px;
+   }
+    .our-plants-card img{
+         width: 100%;
+    }
+    .our-plants-title{
+        text-align: center;
+        padding: 10px;
+    }
+    .card-item button{
+        padding: 10px 60px;
+    }
     
+    .flower-lover-image-icon{
+        display: none;
+    }
+     .flower-lover-items{
+        padding: 10px;
+        margin-bottom: 50px;
+     }
+    .flower-lover-items img{
+        width: 100%;
+    }
+    .right-deal-content h3{
+        font-size: 1.4rem;
+    }
+    .right-deal img{
+        width: 100%;
+        padding: 0 30px;
+       
+        
+    }
+    .right-deal::before {
+    position: absolute;
+    bottom: 20px;
+    left: 25px;
+    height: 89%;
+    width: 87%;
+    content: "";
+    background: #000;
+    opacity: 30%;
+    border-radius: 30px;
+}
+    .subscribe-us{
+        width: 100%;
+    }
+    .subscribe-us h3{
+        font-size: 1.4rem;
+    }
+    .subscribe-email{
+        padding-right: 50px;
+    }
+    
+    
+
+    .footer-content{
+        padding-left: 20px;
+    }
+
 }
