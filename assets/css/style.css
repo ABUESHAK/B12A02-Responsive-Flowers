@@ -82,3 +82,51 @@ nav{
 }
 
 /* our plants section css */
+.our-plants-section{
+    margin-bottom: 200px;
+    position: relative;
+}
+.our-plants-title{
+    text-align: center;
+}
+.our-plants-title h3{
+    font-size: 3.2rem;
+    margin-bottom: 16px;
+}
+.our-plants-title span{
+    color: #E95A08;  
+}
+.our-plants-title p{
+    color:#8987A1;
+    margin-bottom: 50px;
+}
+
+.our-plants-card{
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+}
+
+.card-item{
+    text-align: center;
+}
+.card-item img{
+    margin-bottom: 30px;
+}
+.card-item h5{
+    font-size: 1.4rem;
+    color: #111111;
+    font-weight: medium;
+    margin-bottom: 20px;
+}
+
+.card-item button{
+    background-color: #E95A08;
+    padding: 19px 90px;
+    font-weight: 500;
+    color: white;
+    border: none;
+    margin-top: 30px;
+    text-align: center;
+}
+
+
